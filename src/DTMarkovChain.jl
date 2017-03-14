@@ -2,9 +2,13 @@ module DTMarkovChain
 
 include("coretypes.jl")
 export MarkovChain,
-  DTFiniteMarkovChain
+  MarkovChainFitParams,
+  DTFiniteMarkovChain,
+  DTFiniteMarkovChainWithFit,
+  DTFiniteMarkovChainMleFitParams
 
 include("finite.jl")
-export estimatemodel!
+export fit,
+  fit!
 
 end # module
